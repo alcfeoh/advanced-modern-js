@@ -1,15 +1,5 @@
-let target;
+let target = document.getElementById( 'output' );
 
-window.addEventListener( 'DOMContentLoaded', () => {
-  target = document.getElementById( 'output' );
-
-  // target will be null if output is not found
-  if ( !target ) {
-    target = document.createElement( 'div' );
-    target.setAttribute( 'id', 'output' );
-    document.body.insertBefore( target, document.body.firstChild );
-  }
-} );
 
 const logColors = {
   log  : 'black',
