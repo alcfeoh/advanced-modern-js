@@ -28,6 +28,6 @@ in `main.js`
 
 ### Testing your code
 
-Verify that your code works by visiting http://localhost:3000/src/current-exercise
+Verify that your code works by visiting http://localhost:8080/exercises/ex-02/begin
   
   
