@@ -1,11 +1,8 @@
-import format from 'date-fns/format';
-
 let id = 0;
 
 const defaultPerson = {
   toString: function() {
-    return `${this.firstName} ${this.lastName}, born ${format( this.birthDate,
-      'MMMM D, YYYY' )}`;
+    return `${this.firstName} ${this.lastName}, born ${this.birthDate}`;
   }
 };
 
@@ -41,10 +38,5 @@ Object.defineProperties( defaultPerson, {
     enumerable: false
   }
 } );
-
-defaultPerson.toString = function() {
-  return `${this.firstName} ${this.lastName}, born ${format( this.birthDate,
-    'MMMM D, YYYY' )}`;
-};
 
 export { defaultPerson };

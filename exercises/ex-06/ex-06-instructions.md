@@ -7,9 +7,6 @@ of `defaultPerson`
 
 ## Instructions
 
-Note that `people.js` has been simplified since the last exercise. There is no longer 
-a `peopleFactory` function.
-
 ### Using `Object.defineProperty / Object.defineProperties`
 
 Refactor `defaultPerson` to be defined via `Object.defineProperty` and/or `Object.defineProperties`
