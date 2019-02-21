@@ -25,7 +25,6 @@ Using `logger.log`, print out the contents of `defaultPerson`.
 
 Add a `toString` method to `defaultPerson`. It should print out the following:  
 **Jane Doe, born March 15, 1985**  
-You can use the `format` method from the date-fns library to format `birthDate`.  
 Use `logger.log` to print out the value returned by `defaultPerson.toString()`.
 
 ### Create a function which creates copies of `defaultPerson`
@@ -46,9 +45,5 @@ an object (hint: try `typeof`), add the key-value pair as a list item. Otherwise
 do not.  
 
 Try your new `logger.objectLog` function against `defaultPerson` and see what happens. 
-
-### Try it out
-
-Visit http://localhost:3000/current-exercise/ to try it out!
 
 

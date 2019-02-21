@@ -1,15 +1,5 @@
-let target;
+let target = document.getElementById( 'output' );
 
-window.addEventListener( 'DOMContentLoaded', () => {
-  target = document.getElementById( 'output' );
-
-  // target will be null if output is not found
-  if ( !target ) {
-    target = document.createElement( 'div' );
-    target.setAttribute( 'id', 'output' );
-    document.body.insertBefore( target, document.body.firstChild );
-  }
-} );
 
 const logColors = {
   log  : 'black',
@@ -22,18 +12,13 @@ const logColors = {
 const allMsgs = [];
 
 const logger = {
-  howMany     : -3,
-  setLogLength: function( length ) {
-    this.howMany = -(Math.abs(length));
-  },
-
-  log: function ( ...msg ) {
+  log: ( ...msg ) => {
     // Add the message(s) to allMsgs
     for ( let x = 0; x < msg.length; x++ ) {
       allMsgs.push( msg[ x ] );
     }
 
-    const msgs = allMsgs.slice( this.howMany );
+    const msgs = allMsgs.slice( -1 );
     target.innerHTML = msgs.join( '<br>' );
   },
 
