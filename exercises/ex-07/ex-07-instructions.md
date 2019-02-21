@@ -17,5 +17,3 @@ And then it should print them out to match "Jane Doe (#1)".
 
 Open `main.js`.  
 Call `logger.personLog()` in the event handler, passing it `defaultPerson`.
-
-Verify that your code works at http://localhost:3000/current-exercise
