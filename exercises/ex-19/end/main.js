@@ -1,6 +1,6 @@
 console.log( 'Just a test, for the START of the exercise' );
 
-import { logger } from './utils';
+import { logger } from './utils.js';
 import { addPerson, getPeople } from './People';
 
 const form = document.getElementById( 'new-person-form' );
