@@ -1,4 +1,4 @@
-import { Person } from './Person';
+import { Person } from './Person.js';
 
 let employeeId = 0;
 const idConfig = {

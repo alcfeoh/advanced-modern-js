@@ -1,4 +1,4 @@
-import { Person } from './Person';
+import { Person } from './Person.js';
 
 const addPerson = config => {
   let people = getPeople();

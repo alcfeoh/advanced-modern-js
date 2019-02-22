@@ -1,4 +1,4 @@
-import { personFactory } from './Person';
+import { personFactory } from './Person.js';
 
 const people = [
   personFactory( {

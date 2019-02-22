@@ -32,6 +32,5 @@ Now go to `people.js`. Replace all calls to `personFactory` with invocations of
 Finally, go to `main.js`. Remove `personFactory` from the import list for `people`.
 Iterate over `people` and print each one out with logger.personLog.
 
-Check your code at http://localhost:3000/src/current-exercise
 
 

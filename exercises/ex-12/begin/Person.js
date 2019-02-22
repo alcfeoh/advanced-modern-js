@@ -31,7 +31,7 @@ class Person {
   }
 
   getBirthDate() {
-    return format( this.birthDate, 'MMMM D, YYYY' );
+    return this.birthDate;
   }
 
   toString() {
