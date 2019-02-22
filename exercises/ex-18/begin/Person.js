@@ -1,5 +1,5 @@
 
-import parse from 'date-fns/parse';
+
 
 const defaultPerson = {
   firstName: 'Jane',
@@ -37,7 +37,7 @@ class Person {
   }
 
   get birthDate() {
-    return format( this._birthDate, 'MMMM D, YYYY' );
+    return this._birthDate;
   }
 
   set birthDate( date ) {

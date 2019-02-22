@@ -14,10 +14,7 @@ In `Person.js`, make three changes:
 * Add a getter method for `id` which returns `this._id` (again, note the underscore)
 * Remove `writable` from `idConfig`
 
-### Format `birthDate`
+### Allow access to `birthDate` wiht getter and setter
 
 Still in `Person.js`, add a getter and setter for `birthDate`. Use `_birthDate` as 
-the pseudo-hidden variable to store the birth date. Use `format` and `parse` from
-the date-fns library to format and parse dates respectively.
-
-Check the results at http://localhost:3000/current-exercise
+the pseudo-hidden variable to store the birth date.
