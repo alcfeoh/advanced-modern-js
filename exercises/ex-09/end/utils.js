@@ -1,15 +1,4 @@
-let target;
-
-window.addEventListener( 'DOMContentLoaded', () => {
-  target = document.getElementById( 'output' );
-
-  // target will be null if output is not found
-  if ( !target ) {
-    target = document.createElement( 'div' );
-    target.setAttribute( 'id', 'output' );
-    document.body.insertBefore( target, document.body.firstChild );
-  }
-} );
+let target = document.getElementById( 'output' );
 
 const logColors = {
   log  : 'black',
@@ -27,8 +16,8 @@ const logger = {
     this.howMany = -(Math.abs(length));
   },
 
-  personLog: ({firstName, lastName, gender, id}) => {
-    let msg = `${firstName} ${lastName} [${gender}] (ID #: ${id})`;
+  personLog: ({firstName, lastName, id}) => {
+    let msg = `${firstName} ${lastName} (#${id})`;
     allMsgs.push( msg );
     target.innerHTML += `${msg}<br>`;
   },

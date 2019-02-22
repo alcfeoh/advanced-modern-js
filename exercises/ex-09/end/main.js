@@ -3,7 +3,7 @@ console.log( 'Just a test, for the START of the exercise' );
 import { people } from './people.js';
 import { logger } from './utils.js';
 
-window.addEventListener( 'DOMContentLoaded', () => {
+
   people.slice( 0, 3 )
         .forEach( logger.personLog );
 
@@ -21,4 +21,3 @@ window.addEventListener( 'DOMContentLoaded', () => {
     return p1.lastName > p2.lastName;
   } ).forEach( logger.personLog );
 
-} );
