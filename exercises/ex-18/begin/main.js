@@ -1,7 +1,7 @@
 console.log( 'Just a test, for the START of the exercise' );
 
 import { logger } from './utils.js';
-import { Employee } from './Employee';
+import { Employee } from './Employee.js';
 
 const form = document.getElementById( 'new-person-form' );
 const showButton = document.getElementById( 'show-all-button' );

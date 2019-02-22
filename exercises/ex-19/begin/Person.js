@@ -41,7 +41,7 @@ class Person {
   }
 
   set birthDate( date ) {
-    this._birthDate = parse( date );
+    this._birthDate = date;
   }
 
   toString() {
