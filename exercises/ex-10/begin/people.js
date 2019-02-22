@@ -1,4 +1,4 @@
-import format from 'date-fns/format';
+
 
 let id = 0;
 
@@ -8,8 +8,7 @@ const defaultPerson = {
   gender   : 'female',
   birthDate: new Date( 1985, 2, 15 ),
   toString : function() {
-    return `${this.firstName} ${this.lastName}, born ${format( this.birthDate,
-      'MMMM D, YYYY' )}`;
+    return `${this.firstName} ${this.lastName}, born  ${this.birthDate}`;
   }
 };
 

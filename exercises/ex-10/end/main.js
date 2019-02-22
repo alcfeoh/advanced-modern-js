@@ -3,9 +3,7 @@ console.log( 'Just a test, for the START of the exercise' );
 import { people, personFactory } from './people.js';
 import { logger } from './utils.js';
 
-window.addEventListener( 'DOMContentLoaded', () => {
-
-  const firstPerson = people.shift();
+ const firstPerson = people.shift();
   people.push( firstPerson );
 
   logger.log( `${firstPerson.firstName} found at ` + people.indexOf(
@@ -15,4 +13,4 @@ window.addEventListener( 'DOMContentLoaded', () => {
   logger.log( 'Can we find a copy of firstPerson? ' +
     people.includes( copyOfFirstPerson ) );
 
-} );
+

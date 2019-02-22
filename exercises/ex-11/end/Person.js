@@ -1,4 +1,4 @@
-import format from 'date-fns/format';
+
 
 const defaultPerson = {
   firstName: 'Jane',
