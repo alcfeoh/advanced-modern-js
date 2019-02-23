@@ -1,7 +1,7 @@
 console.log( 'Just a test, for the START of the exercise' );
 
 import { logger } from './utils.js';
-import { addPerson, getPeople } from './People';
+import { addPerson, getPeople } from './People.js';
 
 const form = document.getElementById( 'new-person-form' );
 const showButton = document.getElementById( 'show-all-button' );
