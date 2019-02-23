@@ -45,9 +45,8 @@
   let isValidDate = false;
 
   function validateDate( value ) {
-    const [ fullMatch, year, month, day ] = /(\d{4})-(\d\d)-(\d\d)/.exec(
-      value );
-    return fullMatch.length > 0 &&
+    const [ year, month, day ] = value.split('-');
+    return value.length > 0 &&
            year > 1915 &&
            year < 2018 &&
            month > 0 &&
