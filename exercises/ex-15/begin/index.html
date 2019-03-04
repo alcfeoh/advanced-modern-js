@@ -41,8 +41,7 @@
   const lastNameField = document.getElementById( 'last-name' );
 
   function validateDate( value ) {
-    const [ fullMatch, year, month, day ] = /(\d{4})-(\d\d)-(\d\d)/.exec(
-      value );
+    const [ year, month, day ] = value.split('-');
     return fullMatch.length > 0 &&
            year > 1915 &&
            year < 2018 &&
