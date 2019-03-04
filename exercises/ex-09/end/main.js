@@ -14,10 +14,9 @@ import { logger } from './utils.js';
   allPeople.forEach( logger.personLog );
 
   // As a one-liner
-  // [ ...people.slice( 5 ), ...people.slice( 0, 5 ) ].forEach( logger.personLog );
+   [ ...people.slice( 5 ), ...people.slice( 0, 5 ) ].forEach( logger.personLog );
 
   logger.log('<br/> Sorted by last name: <br/>');
-  people.sort( ( p1, p2 ) => {
-    return p1.lastName > p2.lastName;
-  } ).forEach( logger.personLog );
+  people.sort( ( p1, p2 ) => (p1.lastName > p2.lastName ? 1 : -1))
+      .forEach( logger.personLog );
 
