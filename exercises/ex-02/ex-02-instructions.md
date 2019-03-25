@@ -18,6 +18,11 @@ Uncomment the first function call to `logger.log` in `main.js`
 Create a new method on `logger` called `colorLog`.  
 It should take a single message as an argument, and two optional arguments
 * A `level` which is set to a default of `log` but could be a different value  
+  * `log` should make the message render in `black`
+  * `debug` should make the message render in `lightgrey`
+  *  `info` should make the message render in `blue`
+  * `warn` should make the message render in `orange`
+  * `error` should make the message render in `red`
 * A `howMany` argument, which determines how many of the last x log statements should be shown. 
   * The default for howMany should be 'all'
   * Users can pass in 'all' or a number
