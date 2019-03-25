@@ -8,4 +8,4 @@ Replace uses of "function() ..." with arrow functions
 Replace the three uses of "function() ..." in `utils.js` with arrow functions.  
 Replace the one use of "function() ..." in `main.js` with an arrow function.  
 
-Check your results at http://localhost:8080/exercises/ex-02/begin
+Check your results at http://localhost:8080/exercises/ex-03/begin
