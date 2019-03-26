@@ -8,26 +8,18 @@ const defaultPerson = {
 };
 
 let id = 0;
-const idConfig = {
-  enumerable  : false,
-  writable    : false,
-  configurable: false
-};
-
-const fields = Object.keys( defaultPerson );
 
 class Person {
-  constructor( config ) {
-    fields.forEach( field => {
-      if ( config[ field ] ) {
-        this[ field ] = config[ field ];
-      } else {
-        this[ field ] = defaultPerson[ field ];
-      }
-    } );
 
-    Object.defineProperty( this, 'id', { ...idConfig, value: ++id } );
-
+  constructor(firstName = defaultPerson.firstName,
+              lastName = defaultPerson.lastName,
+              gender = defaultPerson.gender,
+              birthDate = defaultPerson.birthDate) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.gender = gender;
+    this.birthDate = birthDate;
+    this.id = id++;
   }
 
   getBirthDate() {
