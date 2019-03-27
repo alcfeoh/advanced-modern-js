@@ -46,12 +46,10 @@
     console.log('You clicked on the not-quite submit button')
   });
 
-  firstNameField.addEventListener( 'click',
-    () => console.log( 'You clicked in the ' +
-                       'first name field.' ) );
-  lastNameField.addEventListener( 'click',
-    () => console.log( 'You clicked in the ' +
-                       'last name field.' ) );
+  firstNameField.addEventListener( 'change',
+    () => console.log( 'You changed the first name field.' ) );
+  lastNameField.addEventListener( 'change',
+    () => console.log( 'You changed  the last name field.' ) );
 </script>
 </body>
 </html>
