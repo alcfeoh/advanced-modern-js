@@ -1,0 +1,19 @@
+{
+  "name": "advanced-modern-js",
+  "version": "1.0.0",
+  "description": "Advanced Modern JS class contents",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcfeoh/advanced-modern-js.git"
+  },
+  "author": "Alain Chautard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alcfeoh/advanced-modern-js/issues"
+  },
+  "homepage": "https://github.com/alcfeoh/advanced-modern-js#readme"
+}
