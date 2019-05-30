@@ -11,7 +11,7 @@ const logColors = {
 const allMsgs = [];
 
 const logger = {
-  howMany     : -3,
+  howMany     : 'all',
   setLogLength: function( length ) {
     this.howMany = -(Math.abs(length));
   },
