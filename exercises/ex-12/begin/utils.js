@@ -16,8 +16,8 @@ const logger = {
     this.howMany = -(Math.abs(length));
   },
 
-  personLog: ({firstName, lastName, gender, id}) => {
-    let msg = `${firstName} ${lastName} [${gender}] (ID #: ${id})`;
+  personLog: ({firstName, lastName, gender, birthDate, id}) => {
+    let msg = `${firstName} ${lastName} [${gender}] born on ${birthDate} (ID #: ${id})`;
     allMsgs.push( msg );
     target.innerHTML += `${msg}<br>`;
   },
