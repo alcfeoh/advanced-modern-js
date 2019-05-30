@@ -13,4 +13,25 @@ const people = [
   new Person( 'Ambrose', 'Chase', 'male', '1993-10-22')
 ];
 
-export { people };
+export function addPerson(person) {
+  let storagePeople = localStorage.getItem('people');
+  let allPeople = [];
+  if (storagePeople) {
+    allPeople = JSON.parse(storagePeople);
+  } else {
+    allPeople = people;
+  }
+  allPeople.push(person);
+  localStorage.setItem('people', JSON.stringify(allPeople));
+}
+
+export function getPeople() {
+  let storagePeople = localStorage.getItem('people');
+  if (storagePeople) {
+    let parsedPeople = JSON.parse(storagePeople);
+    parsedPeople = parsedPeople.map(person => new Person(person.firstName, person.lastName, person.gender, person.birthDate));
+    return parsedPeople;
+  } else {
+    return people;
+  }
+}
