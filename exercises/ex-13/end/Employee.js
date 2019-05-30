@@ -9,23 +9,18 @@ const idConfig = {
 const fields = [ 'department', 'jobTitle' ];
 
 class Employee extends Person {
-  constructor( config ) {
-    super( config );
-    fields.forEach( field => {
-      if ( config[ field ] ) {
-        this[ field ] = config[ field ];
-      } else {
-        this[ field ] = defaultPerson[ field ];
-      }
-    } );
 
+  constructor( firstName, lastName, gender, birthDate, jobTitle, department ) {
+    super( firstName, lastName, gender, birthDate );
+    this.jobTitle = jobTitle;
+    this.department = department;
     Object.defineProperty( this, '_employeeId',
       { ...idConfig, value: ++employeeId } );
   }
 
   toString() {
     return `${this.firstName} ${this.lastName} is employed as a ${this.jobTitle}` +
-           ` in the ${this.department} department.`;
+           ` in the ${this.department} department`;
   }
 }
 

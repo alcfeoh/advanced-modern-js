@@ -5,14 +5,7 @@ import { Employee } from './Employee.js';
 
 
 window.addEventListener( 'DOMContentLoaded', () => {
-  const clerk = new Employee( {
-    firstName : 'Jane',
-    lastName  : 'Dulce',
-    birthDate : '1990-01-30',
-    gender    : 'female',
-    jobTitle  : 'clerk',
-    department: 'accounting'
-  } );
+  const clerk = new Employee( 'Jane','Dulce', '1990-01-30','female', 'clerk', 'accounting' );
 
   logger.log( 'Employee: ' + clerk );
   logger.log('<br/>');
