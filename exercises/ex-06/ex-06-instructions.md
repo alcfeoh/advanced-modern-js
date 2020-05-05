@@ -14,7 +14,7 @@ Define each of these properties as follows:
 * `firstName`: give it a value, make it read-only, but also enumerable
 * `lastName`: give it a value, make it read-only, but also enumerable
 * `gender`: give it a value, make it enumerable
-* `birthDate`: give it a value, make it enumerable and wriatable and ensure we can
+* `birthDate`: give it a value, make it enumerable and writable and ensure we can
   edit it later if needed
 * `id`: Non-enumerable, but give it a value (maybe use a closure?)
 * `toString`: non-enumerable, but give it a value
