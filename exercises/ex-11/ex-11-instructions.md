@@ -16,7 +16,7 @@ If no parameters are passed to the constructor or if some params are missing, us
 Generate a new `id` for every single person that gets created.
 
 Finally, go to `main.js`. Remove `personFactory` from the import list for `people`.
-Iterate over `people` and print each one out with logger.personLog.
+Iterate over `people` and print each one out with `logger.personLog`.
 
 
 
